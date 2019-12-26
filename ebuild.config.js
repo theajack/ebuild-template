@@ -11,9 +11,12 @@ module.exports = {
         // '../npm/version.js', // this is an example
     ],
     'name': '',
-    'version': '0.0.2',
+    'version': '0.0.1',
     'npmExternals': {
         // example
         // 'md5': 'md5'
-    }
+    },
+    'npmPaths': [
+        'npm'
+    ]
 };
