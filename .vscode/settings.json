@@ -15,7 +15,6 @@
         "autoFix": true
       }
     ],
-    "minapp-vscode.disableAutoConfig": true,
     "search.exclude": {        
       "**/node_modules": true,
       "**/cdn": true,

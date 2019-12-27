@@ -6,14 +6,16 @@ let tranToEs5InNpm = config.tranToEs5InNpm;
 
 function main () {
     copy();
-    if (tranToEs5InNpm) {
-        transEs6ByBabel();
-    }
 }
 
 function copy () {
-    gulp.src(['src/*'])
-        .pipe(gulp.dest('npm'));
+    gulp.src('src/*')
+        .pipe(gulp.dest('npm'))
+        .on('end', () => {
+            if (tranToEs5InNpm) {
+                transEs6ByBabel();
+            }
+        });
 }
 
 function transEs6ByBabel () {

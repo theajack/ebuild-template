@@ -1,5 +1,5 @@
 {
-    "name": "{{name}}",
+    "name": "aaa",
     "version": "0.0.1",
     "description": "{{description}}",
     "scripts": {
@@ -10,7 +10,8 @@
         "lint": "eslint src --ext js",
         "copy-latest": "node ./helper/copy-latest.js",
         "modify-version": "node ./helper/modify-version.js",
-        "copy-npm": "node ./helper/copy-npm.js"
+        "copy-npm": "node ./helper/copy-npm.js",
+        "render-tpl": "node ./template/execute.js"
     },
     "author": "{{author}}",
     "repository": {
