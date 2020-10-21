@@ -11,7 +11,7 @@ module.exports = {
         contentBase: path.resolve('./', 'public'),
         historyApiFallback: true,
         inline: true,
-        host: '0.0.0.0', // 'localhost'//
+        host: 'localhost',
         disableHostCheck: true,
         proxy: {
         },
@@ -30,6 +30,21 @@ module.exports = {
             options: {
                 configFile: './.eslintrc.js'
             }
+        }, {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader'],
+        }, {
+            test: /\.less$/,
+            use: ['style-loader', 'css-loader', 'less-loader'],
+        }, {
+            test: /\.(png|jpg|gif|svg|woff2?|eot|ttf)(\?.*)?$/,
+            loader: 'url-loader',
+            options: {
+                limit: 50000,
+            },
+        }, {
+            test: /\.html$/,
+            loader: 'html-loader',
         }]
     }
 };

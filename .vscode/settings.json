@@ -15,11 +15,10 @@
             "autoFix": true
         }
     ],
-    "minapp-vscode.disableAutoConfig": true,
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/cdn": true,
-        "**/npm": true
+    "search.exclude": {        
+      "**/node_modules": true,
+      "**/cdn": true,
+      "**/npm": true
     },
     "eslint.autoFixOnSave": true,
     "typescript.validate.enable": true,

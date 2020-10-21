@@ -10,10 +10,14 @@ module.exports = {
         // config which version.js files need to modify version
         // '../npm/version.js', // this is an example
     ],
-    'name': '',
-    'version': '0.0.2',
+    'libraryName': '', // cdn global name
+    'cdnFileName': '',
+    'version': '0.0.1',
     'npmExternals': {
         // example
         // 'md5': 'md5'
-    }
+    },
+    'npmPaths': [
+        'npm'
+    ]
 };
