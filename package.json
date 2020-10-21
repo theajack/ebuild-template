@@ -1,5 +1,5 @@
 {
-    "name": "aaa",
+    "name": "{{name}}",
     "version": "0.0.1",
     "description": "{{description}}",
     "scripts": {
@@ -16,11 +16,9 @@
     "author": "{{author}}",
     "repository": {
         "type": "git",
-        "url": "https://github.com/theajack/ebuild-cli"
+        "url": ""
     },
-    "keywords": [
-        "ebuild-cli"
-    ],
+    "keywords": [],
     "license": "MIT",
     "devDependencies": {
         "@babel/core": "^7.6.4",
